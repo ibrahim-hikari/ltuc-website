@@ -1,3 +1,107 @@
 body{
-    background-color: #000;
+    overflow-x: hidden;
+}
+/********** Header Sectoin **********/
+header {
+    /* border: solid; */
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+img {
+    width: 30%;
+}
+
+.logo {
+    position: absolute;
+    left: 2%;
+    top: 2.1vmax;
+    width: 25%;
+}
+
+.main_nav {
+    /* border: solid; */
+    bottom: 0%;
+    height: 35px;
+    left: 67%;
+    position: absolute;
+    width: 33%;
+}
+.main_nav ul {
+    /* border: solid; */
+    position: absolute;
+    top: 20%;
+    left: -2%;
+    width: 100%;
+    z-index: 3;
+}
+
+.main_nav div {
+    background-color: #fda136;
+    /* border: solid; */
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.main_nav ul li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 3%;
+}
+
+.main_nav ul li a {
+    border-right: solid;
+    color: #fff;
+    padding: 0% 1%;
+    text-decoration: none;
+}
+
+.main_nav ul li:last-child a {
+    border: none;
+}
+
+/********** FIRST SECTION **********/
+
+.first-section {
+    /* border: solid; */
+    position: relative;
+    width: 100%;
+    height: 625px;
+    /* z-index: 0; */
+}
+
+.first-section .slide-container {
+    /* border: solid; */
+    height: 625px;
+    width: 100%;
+}
+
+.first-section .slide-container img {
+    /* display: none; */
+    height: 625px;
+    /* position: absolute; */
+    width: 100%;
+}
+
+.first-section .button {
+    background-color: #fda136;
+    border: 0;
+    bottom: 11%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 750;
+    height: 53px;
+    left: 40%;
+    line-height: 53px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
 }
