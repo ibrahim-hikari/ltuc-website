@@ -26,4 +26,32 @@ $(document).ready(()=>{
 				$('.by-degree-button').css('opacity', '0.7');
 
     })
+		$('.icon').click(function (e) { 
+			e.preventDefault();
+			$('.menu_nav').toggle(500);
+		});
 })
+
+
+const header = document.querySelector('header');
+const sectionOne = document.querySelector('.first-section');
+
+const sectionOneOptions = {
+  rootMargin: '-500px 0px 0px 0px',
+};
+
+    const sectionOneObserver = new IntersectionObserver(function (
+      entries,
+      sectionOneObserver,
+    ) {
+			
+	entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add('nav-scrolled');
+    } else {
+      header.classList.remove('nav-scrolled');
+    }
+  });
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
