@@ -1,4 +1,4 @@
-body{
+body {
     overflow-x: hidden;
 }
 /********** Header Sectoin **********/
@@ -104,4 +104,340 @@ img {
     text-align: center;
     text-decoration: none;
     width: 20%;
+    font-family: "Lato", sans-serif;
+}
+
+/********** SECOND SECTION **********/
+.second-section {
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.second-section .about-pic {
+    /* border: solid; */
+    height: 100vh;
+    width: 50%;
+}
+
+.second-section div {
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 0% 5%;
+    width: 50%;
+}
+
+.second-section div img {
+    /* border: solid; */
+    width: 65%;
+    height: 80px;
+}
+
+.second-section div p {
+    /* border: solid; */
+    font-family: "AlrightSans", sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 140%;
+    padding: 2%;
+    width: 90%;
+}
+
+.second-section div a {
+    background-color: #e80e4a;
+    box-shadow: 3px 4px 16px -2px #555;
+    color: #fff;
+    font-family: "AlrightSans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 59%;
+    margin-top: 2%;
+    padding: 2%;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/******************************** As-har's Part  *****************************/
+
+hr {
+    border: 0;
+    border-top: solid 0.15px;
+    bottom: 10%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+}
+.pdf-card:hover {
+    background: #E80E4A;
+    box-shadow: 1px 1px 6px 1px grey;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pdf-card {
+    color: #fff;
+    line-height: 150%;
+    /* vertical-align: 50%; */
+    text-decoration: none;
+    transition: 1s;
+    position: relative;
+}
+
+.by-school-button,
+.by-degree-button {
+    color: white;
+    background: #efa51c;
+    padding: 1.5vh;
+    border: none;
+    margin: 1vh;
+    box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.774);
+}
+.by-school-button:hover,
+.by-degree-button:hover {
+    box-shadow: 0px 2px 10px 0px rgba(128, 128, 128, 0.836);
+    transition: 350ms;
+}
+.by-school-button:focus,
+.by-degree-button:focus {
+    box-shadow: -3px -5px 10px 0px rgba(128, 128, 128, 0.808);
+}
+
+@media (min-width: 768px) {
+    /* -------- Third section -------- */
+    .third-section {
+        /* border: solid green; */
+        position: relative;
+        height: 720px;
+    }
+    .part-one {
+        /* border: solid; */
+        padding: 7% 0%;
+        width: 30%;
+    }
+    .part-one img {
+        /* border: solid; */
+        margin: 0% 15%;
+        width: 75%;
+    }
+    .part-one p {
+        /* border: solid; */
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 140%;
+        margin: 2% 15%;
+        padding: 1%;
+        width: 80%;
+    }
+    .part-one button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 5% 15% 0% 15%;
+        /* padding: 2% 0%; */
+        width: 50%;
+    }
+
+    .right-part .by-school,
+    .right-part .by-degree {
+        /* border: solid; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        left: 30%;
+        padding: 5% 5% 0% 5%;
+        position: absolute;
+        top: 0%;
+        width: 60%;
+    }
+
+    .pdf-card {
+        background: #5b358d;
+        display: table;
+        /* border: solid; */
+        box-shadow: 6px 6px 11px 1px grey;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
+        height: 80px;
+        margin: 0% 0% 3% 0%;
+        padding: 3%;
+        position: relative;
+        text-align: center;
+        width: 25%;
+    }
+    
+    .pdf-card div {
+        /* border: solid #fff; */
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /* ------------footer -------------- */
+    .footer {
+        background-image: linear-gradient(to bottom right, red, rgb(121, 21, 121));
+        width: 100%;
+        padding: 4vh;
+        display: grid;
+        grid-template-columns: 67% 33%;
+        float: left;
+    }
+    .ifram-div {
+        grid-column: 1;
+        justify-content: center;
+        margin-left: 4vw;
+        margin-top: 1vh;
+    }
+    .ifram-div .ifram {
+        width: 90%;
+        height: 96%;
+    }
+    .contact-div {
+        padding: 0.7vw;
+    }
+    .footer-logo {
+        width: 12vw;
+        height: 15vh;
+        display: block;
+    }
+    .contact-text {
+        display: block;
+        width: 14vw;
+        margin-top: 5vh;
+        line-height: 1vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        display: block;
+        font-size: 1em;
+        width: 23vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: #e3b5d6;
+        font-size: 1.1em;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 1.6em;
+        padding: 0.5vw;
+    }
+    .complaints-section {
+        width: 22vw;
+        color: #e3b5d6;
+        font-size: 1.1em;
+        line-height: 4vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+    }
+
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+}
+
+@media (max-width: 768px) {
+    .pdf-card div {
+        font-size: 1.2em;
+        background: #5b358d;
+        width: 40%;
+        padding: 12vw;
+        margin: 4vw auto 1vw auto;
+        text-align: center;
+        box-shadow: 6px 6px 11px 1px grey;
+    }
+
+    .part-one button {
+        display: block;
+        padding: 2.7vw;
+        margin: 5vw auto 6vw auto;
+        width: 40vw;
+    }
+    .part-one img {
+        margin: 0 auto 0 auto;
+        width: 60vw;
+        display: block;
+    }
+    .part-one p {
+        margin: 0 auto 0 auto;
+        width: 60vw;
+    }
+
+    /* ------ footer ------- */
+    .footer {
+        background-image: linear-gradient(to bottom right, red, rgb(121, 21, 121));
+        width: 100%;
+        padding: 4vh;
+        float: left;
+        display: grid;
+        margin-top: 5vw;
+        grid-template-rows: 2fr;
+    }
+    .ifram-div {
+        grid-row: 2;
+        justify-content: center;
+        /* margin-left: 2vw; */
+        /* margin-top: 1vh; */
+    }
+    .ifram-div .ifram {
+        width: 90vw;
+        height: 55vw;
+    }
+    .footer-logo {
+        width: 50vw;
+        height: 20vh;
+        margin: 1vw auto 2vw auto;
+        display: block;
+    }
+    .contact-text {
+        margin: 0 auto 0 2vw;
+        display: block;
+        width: 54vw;
+        margin-top: 5vh;
+        line-height: 5vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        margin: 0 auto 0 2vw;
+        display: block;
+        font-size: 1em;
+        width: 52vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 1.1em;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 2.2em;
+        padding: 2.5vw;
+    }
+    .complaints-section {
+        width: 52vw;
+        margin: 0 auto 0 2vw;
+        color: #e3b5d6;
+        font-size: 1em;
+        line-height: 4vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+    }
+
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+    .social {
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
 }
