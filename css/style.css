@@ -160,8 +160,8 @@ img {
 
 /******************************** As-har's Part  *****************************/
 
-hr {
-    border: 0;
+.pdf-card hr {
+    /* border: 0; */
     border-top: solid 0.15px;
     bottom: 10%;
     left: 25%;
@@ -169,7 +169,7 @@ hr {
     width: 50%;
 }
 .pdf-card:hover {
-    background: #E80E4A;
+    background: #e80e4a;
     box-shadow: 1px 1px 6px 1px grey;
     cursor: pointer;
     transition: 1s;
@@ -264,7 +264,7 @@ hr {
         text-align: center;
         width: 25%;
     }
-    
+
     .pdf-card div {
         /* border: solid #fff; */
         display: table-cell;
@@ -273,43 +273,44 @@ hr {
 
     /* ------------footer -------------- */
     .footer {
-        background-image: linear-gradient(to bottom right, red, rgb(121, 21, 121));
+        background-image: url("../assets/footer-background.png");
+        background-size: 100%;
         width: 100%;
         padding: 4vh;
-        display: grid;
-        grid-template-columns: 67% 33%;
-        float: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .ifram-div {
-        grid-column: 1;
-        justify-content: center;
-        margin-left: 4vw;
-        margin-top: 1vh;
+        padding: 2% 0%;
+        width: 60%;
     }
+
     .ifram-div .ifram {
         width: 90%;
         height: 96%;
     }
     .contact-div {
-        padding: 0.7vw;
+        /* padding: 0.7vw; */
+        display: flex;
+        flex-direction: column;
+        width: 30%;
     }
     .footer-logo {
-        width: 12vw;
-        height: 15vh;
-        display: block;
+        width: 50%;
     }
     .contact-text {
         display: block;
         width: 14vw;
         margin-top: 5vh;
         line-height: 1vh;
-        color: rgb(233, 214, 227);
+        color: #E3B5D6;
     }
     .contact-info {
         display: block;
         font-size: 1em;
         width: 23vw;
-        color: rgb(233, 214, 227);
+        color: #E3B5D6;
     }
     .fa {
         color: #e3b5d6;
@@ -336,7 +337,7 @@ hr {
     .fa:hover,
     .contact-info:hover {
         cursor: pointer;
-        color: rgba(255, 255, 255, 0.938);
+        color: #E3B5D6;
     }
 }
 
