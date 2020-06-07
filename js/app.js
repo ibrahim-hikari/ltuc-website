@@ -28,7 +28,7 @@ $(document).ready(()=>{
     })
 		$('.icon').click(function (e) { 
 			e.preventDefault();
-			$('.menu_nav').toggle(2000);
+			$('.menu_nav').toggle(200);
 		});
 		$(window).on('load', function () {
 			var pre_loader = $('.spinner-wrapper');
