@@ -18,25 +18,25 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .logo{
+    .logo {
         width: 30vw;
     }
 }
 
 @media (max-width: 840px) {
-    .logo{
+    .logo {
         width: 35vw;
     }
 }
 
 @media (max-width: 740px) {
-    .logo{
+    .logo {
         width: 40vw;
     }
 }
 
 @media (max-width: 520px) {
-    .logo{
+    .logo {
         width: 55vw;
     }
 }
@@ -88,7 +88,7 @@ header {
 
     .icon {
         /* border: solid; */
-        background-color: #00000075;
+        /* background-color: #00000075; */
         bottom: 15%;
         display: block;
         right: 2.5%;
@@ -130,6 +130,7 @@ header {
     }
     .menu_nav {
         display: none;
+        opacity: 0;
     }
     .main_nav {
         /* border: solid; */
@@ -181,16 +182,19 @@ header {
 
 /********** FIRST SECTION **********/
 @media (max-width: 1190px) {
-    .hidden{
+    .hidden {
         display: block;
         height: 13vh;
         width: 100%;
     }
 }
+
 .first-section {
     /* border: solid; */
-    height: 625px;
-    /* height: 13vh; */
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 .first-section .slide-container {
@@ -200,25 +204,56 @@ header {
 
 .first-section .slide-container img {
     display: inline-block;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .first-section .button {
     background-color: #fda136;
     border: 0;
-    bottom: 11%;
+    display: inline-block;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vmax;
+    font-size: 3vmax;
     font-weight: 750;
-    height: 10vh;
-    left: 40%;
-    line-height: 10vh;
+    height: 8vh;
+    left: 40vw;
+    line-height: 8vh;
+    top: 37vmax;
     position: absolute;
     text-align: center;
     text-decoration: none;
-    width: 18vw;
-    font-family: "Lato", sans-serif;
+    width: 20vw;
+}
+
+@media (max-width: 1190px) {
+    .first-section .slide-container img {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+    .first-section {
+        height: auto;
+    }
+}
+
+@media (max-width: 590px) {
+    .first-section .button {
+        background-color: #fda136;
+        border: 0;
+        display: block;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vmax;
+        font-weight: 750;
+        height: 8vh;
+        line-height: 8vh;
+        margin-top: -5vh;
+        position: unset;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+    }
 }
 
 /********** SECOND SECTION **********/
