@@ -221,56 +221,6 @@ header {
     font-family: "Lato", sans-serif;
 }
 
-/********** SECOND SECTION **********/
-.second-section {
-    /* border: solid; */
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.second-section .about-pic {
-    /* border: solid; */
-    height: 100vh;
-    width: 50%;
-}
-
-.second-section div {
-    /* border: solid; */
-    display: flex;
-    flex-direction: column;
-    padding: 10% 5% 0% 5%;
-    width: 50%;
-}
-
-.second-section div img {
-    /* border: solid; */
-    width: 65%;
-    height: 80px;
-}
-
-.second-section div p {
-    /* border: solid; */
-    font-family: "AlrightSans", sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 140%;
-    padding: 2%;
-    width: 90%;
-}
-
-.second-section div a {
-    background-color: #e80e4a;
-    box-shadow: 3px 4px 16px -2px #555;
-    color: #fff;
-    font-family: "AlrightSans", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-left: 59%;
-    margin-top: 2%;
-    padding: 2%;
-    text-decoration: none;
-    width: fit-content;
-}
 
 /******************************** As-har's Part  *****************************/
 
@@ -376,7 +326,58 @@ body {
     color: rgb(243, 236, 241);
 }
 
+
 @media screen and (min-width: 1023px) {
+
+    .second-section {
+    
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .second-section .about-pic {
+    
+        height: 100vh;
+        width: 50%;
+    }
+    
+    .second-section div {
+    
+        flex-direction: column;
+        padding: 10% 5% 0% 5%;
+        width: 50%;
+    }
+    
+    .second-section div img {
+      
+        width: 65%;
+        height: 80px;
+    }
+    
+    .second-section div p {
+      
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 140%;
+        padding: 2%;
+        width: 90%;
+    }
+    
+    .second-section div a {
+        background-color: #e80e4a;
+        box-shadow: 3px 4px 16px -2px #555;
+        color: #fff;
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-left: 59%;
+        margin-top: 5%;
+        padding: 1vw;
+        text-decoration: none;
+        width: fit-content;
+    } 
+    
 
     /* -------- Third section -------- */
 
@@ -589,9 +590,111 @@ body {
        width: 100vw;
        margin: 0 auto 0 auto;
    }
+      /* ---------- secand section ------- */
+      .second-section {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 9vw;
+    }
+    .second-section .about-pic {
+        height: 50vh;
+        width: 100vw;
+    }
+    
+    .second-section div {
+            display: block;
+        padding: 10% 5% 0% 5%;
+        width: 100vw;
+    }
+    
+    .second-section div img {
+        width: 30%;
+        height: 50px;
+    }
+    
+    .second-section div p {
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1rem;
+        line-height: 140%;
+        padding: 2%;
+        margin-bottom: 4vw;
+        width: 85%;
+    }
+    
+    .second-section div a {
+        background-color: #e80e4a;
+        box-shadow: 3px 4px 16px 2px #555;
+        color: #fff;
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 50%;
+        margin: 0 auto 0 auto;
+        margin-top: 2%;
+        padding: 1.5vw;
+        text-decoration: none;
+        width: fit-content;
+    }
+    
+    .second-section div a:hover{
+        box-shadow: 1px 2px 16px 0px #555;
+    }
 }
 
 @media (min-width: 590px) and (max-width: 1023px){
+
+    .second-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .second-section .about-pic {
+    
+        height: 100vh;
+        width: 50%;
+    }
+    
+    .second-section div {
+    
+        flex-direction: column;
+        padding: 10% 5% 0% 5%;
+        width: 50%;
+    }
+    
+    .second-section div img {
+      
+        width: 55%;
+        height: 70px;
+    }
+    
+    .second-section div p {
+      
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 140%;
+        padding: 2%;
+        width: 90%;
+    }
+    
+    .second-section div a {
+        background-color: #e80e4a;
+        box-shadow: 3px 4px 16px -2px #555;
+        color: #fff;
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1.1rem;
+        /* font-weight: 700; */
+        margin-left: 59%;
+        margin-top: 2%;
+        padding: 1.5vw;
+        text-decoration: none;
+        width: fit-content;
+    } 
+    
+    .second-section div a:hover{
+        box-shadow: 1px 2px 16px 0px #555;
+    }
+    
 
     /* ----- Third section ----- */
 
@@ -664,6 +767,8 @@ body {
         margin: 5% 15% 0% 15%;
         width: 19.5vw;
     }
+
+    
 }
 @media  (max-width: 760px) and (min-width: 590px) {
 
@@ -751,4 +856,54 @@ body {
        width: 100vw;
        margin: 0 auto 0 auto;
    }
+
+   /* ---------- secand section ------- */
+   .second-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 9vw;
+}
+.second-section .about-pic {
+    height: 50vh;
+    width: 100vw;
+}
+
+.second-section div {
+        display: block;
+    padding: 10% 5% 0% 5%;
+    width: 100vw;
+}
+
+.second-section div img {
+    width: 30%;
+    height: 50px;
+}
+
+.second-section div p {
+    font-family: "AlrightSans", sans-serif;
+    font-size: 1rem;
+    line-height: 140%;
+    padding: 2%;
+    margin-bottom: 4vw;
+    width: 85%;
+}
+
+.second-section div a {
+    background-color: #e80e4a;
+    box-shadow: 3px 4px 16px 2px #555;
+    color: #fff;
+    font-family: "AlrightSans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    margin-top: 2%;
+    padding: 1.5vw;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.second-section div a:hover{
+    box-shadow: 1px 2px 16px 0px #555;
+}
 }
