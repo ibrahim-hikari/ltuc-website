@@ -30,6 +30,12 @@ $(document).ready(()=>{
 			e.preventDefault();
 			$('.menu_nav').toggle(500);
 		});
+		$(window).on('load', function () {
+			var pre_loader = $('#preloader');
+			pre_loader.fadeOut('slow', function () {
+					$(this).remove();
+			});
+	});
 })
 
 
