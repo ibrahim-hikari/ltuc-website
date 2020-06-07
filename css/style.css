@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -266,6 +270,7 @@ header {
 .second-section .about-pic {
     /* border: solid; */
     height: 100vh;
+    margin-top: -5vh;
     width: 50%;
 }
 
@@ -305,6 +310,66 @@ header {
     padding: 2%;
     text-decoration: none;
     width: fit-content;
+}
+
+@media (max-width: 1060px) {
+    .second-section {
+        /* border: solid; */
+        display: block;
+        width: 100vw;
+        margin-bottom: 5vh;
+        width: 100vw;
+    }
+    .second-section .about-pic {
+        /* border: solid; */
+        margin-top: 35vh;
+        width: 100%;
+    }
+
+    .second-section div {
+        /* border: solid; */
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .second-section div img {
+        /* border: solid; */
+        position: absolute;
+        top: -120vh;
+        left: 30vw;
+        height: auto;
+        width: 40vw;
+    }
+
+    .second-section div p {
+        /* border: solid; */
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        line-height: 140%;
+        margin-top: -5vh;
+        padding: 0%;
+        width: 80%;
+    }
+
+    .second-section div a {
+        /* border: solid; */
+        background-color: #e80e4a;
+        box-shadow: 3px 4px 16px 5px #555;
+        color: #fff;
+        display: block;
+        font-family: "AlrightSans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 5vh;
+        margin-left: -5vw;
+        margin-right: 0vw;
+        text-align: center;
+        padding: 1%;
+        text-decoration: none;
+        width: 100vw;
+    }
 }
 
 /******************************** As-har's Part  *****************************/
@@ -362,7 +427,7 @@ body {
     height: 96%;
 }
 .contact-div {
-     width: 30%; 
+    width: 30%;
 }
 .footer-logo {
     width: 50%;
@@ -372,15 +437,15 @@ body {
     width: 14vw;
     margin-top: 5vh;
     line-height: 1vh;
-    color: #E3B5D6;
+    color: #e3b5d6;
 }
 .contact-info {
-    padding: .5vw;
+    padding: 0.5vw;
     line-height: 35px;
     display: block;
     font-size: 1em;
     width: 23vw;
-    color: #E3B5D6;
+    color: #e3b5d6;
 }
 .fa {
     color: #e3b5d6;
@@ -397,7 +462,7 @@ body {
     width: 22vw;
     color: #e3b5d6;
     font-size: 1em;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 4vh;
 }
 .complaints-section a {
@@ -412,14 +477,13 @@ body {
 }
 
 @media screen and (min-width: 1023px) {
-
     /* -------- Third section -------- */
 
     .third-section {
         position: relative;
         height: 720px;
     }
-   
+
     .part-one {
         padding: 7% 0%;
         width: 30%;
@@ -431,7 +495,7 @@ body {
     .part-one p {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 140%;
-        margin: 2% 17% ;
+        margin: 2% 17%;
         padding: 1%;
         width: 80%;
     }
@@ -474,7 +538,7 @@ body {
         cursor: pointer;
         transition: 1s;
     }
-    
+
     .pdf-card div {
         display: table-cell;
         vertical-align: middle;
@@ -488,13 +552,12 @@ body {
     }
 
     /* ------------footer -------------- */
-    .footer{
+    .footer {
         margin-top: 9vw;
     }
 }
 
-@media  (max-width: 590px) {
-
+@media (max-width: 590px) {
     /* ------- Third Section ------ */
     .pdf-card div {
         font-size: 1.04rem;
@@ -548,89 +611,88 @@ body {
         transition: 1s;
     }
 
-     /* ------ footer ------- */
+    /* ------ footer ------- */
 
-     .footer {
+    .footer {
         background-image: url("../assets/footer-background.png");
-       background-size: cover;
-       padding: 4vh;
-       background-repeat: no-repeat;
-       float: left;
-       display: grid;
-       margin-top: 5vw;
-       grid-template-rows: 2fr;
-   }
-   .ifram-div {
-       grid-row: 2;
-       width: 100%; 
-       margin: 2vw 5vw 0 0;
-       padding: 0;
-   }
-   .ifram-div .ifram {
-       margin: 0 auto 0 auto;
-       width: 85vw;
-       height: 55vw;
-   }
-   .footer-logo {
-       width: 40vw;
-       height: 20vh;
-       margin: 1vw auto 2vw auto;
-       display: block;
-   }
-   .contact-text {
-       margin: 0 auto 0 2vw;
-       display: block;
-       width: 40vw;
-       margin-top: 5vh;
-       line-height: 5vh;
-       color: rgb(233, 214, 227);
-   }
-   .contact-info {
-       margin: 0 auto 0 2vw;
-       display: block;
-       font-size: 1em;
-       width: 52vw;
-       color: rgb(233, 214, 227);
-   }
-   .fa {
-       color: rgb(226, 205, 220);
-       font-size: 1.1em;
-       margin: 0.5vw;
-   }
-   .facebook,
-   .instagram,
-   .twitter {
-       font-size: 2.2em;
-       padding: 2.5vw;
-   }
-   .complaints-section {
-       width: 52vw;
-       margin: 0 auto 0 2vw;
-       color: #e3b5d6;
-       font-size: 1em;
-       line-height: 4vh;
-   }
-   .complaints-section a {
-       color: #e3b5d6;
-   }
+        background-size: cover;
+        padding: 4vh;
+        background-repeat: no-repeat;
+        float: left;
+        display: grid;
+        margin-top: 5vw;
+        grid-template-rows: 2fr;
+    }
+    .ifram-div {
+        grid-row: 2;
+        width: 100%;
+        margin: 2vw 5vw 0 0;
+        padding: 0;
+    }
+    .ifram-div .ifram {
+        margin: 0 auto 0 auto;
+        width: 85vw;
+        height: 55vw;
+    }
+    .footer-logo {
+        width: 40vw;
+        height: 20vh;
+        margin: 1vw auto 2vw auto;
+        display: block;
+    }
+    .contact-text {
+        margin: 0 auto 0 2vw;
+        display: block;
+        width: 40vw;
+        margin-top: 5vh;
+        line-height: 5vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        margin: 0 auto 0 2vw;
+        display: block;
+        font-size: 1em;
+        width: 52vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 1.1em;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 2.2em;
+        padding: 2.5vw;
+    }
+    .complaints-section {
+        width: 52vw;
+        margin: 0 auto 0 2vw;
+        color: #e3b5d6;
+        font-size: 1em;
+        line-height: 4vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+    }
 
-   .complaints-section a:hover,
-   .fa:hover,
-   .contact-info:hover {
-       cursor: pointer;
-       color: rgba(255, 255, 255, 0.938);
-   }
-   .social {
-       width: 100vw;
-       margin: 0 auto 0 auto;
-   }
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+    .social {
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
 }
 
-@media (min-width: 590px) and (max-width: 1023px){
-
+@media (min-width: 590px) and (max-width: 1023px) {
     /* ----- Third section ----- */
 
-    .third-section{
+    .third-section {
         margin: 4vw 0 3vw 0;
         display: grid;
         grid-template-columns: 35% 65%;
@@ -663,17 +725,18 @@ body {
         flex-wrap: wrap;
         width: 78vw;
     }
-    .right-part .by-school , .right-part .by-degree{
+    .right-part .by-school,
+    .right-part .by-degree {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .pdf-card div{
-        font-size: 1.1rem; 
-        background: #5B358D;
+    .pdf-card div {
+        font-size: 1.1rem;
+        background: #5b358d;
         width: 21vw;
-        height: 9vh;       
-        padding:3.5vw;
+        height: 9vh;
+        padding: 3.5vw;
         margin: 1vw;
         text-align: center;
         position: relative;
@@ -700,90 +763,89 @@ body {
         width: 19.5vw;
     }
 }
-@media  (max-width: 760px) and (min-width: 590px) {
 
-    .pdf-card div{
-        font-size: 1rem; 
+@media (max-width: 760px) and (min-width: 590px) {
+    .pdf-card div {
+        font-size: 1rem;
         width: 21vw;
-        height: 10vh;       
-        padding:4vw;
-     
+        height: 10vh;
+        padding: 4vw;
     }
 
-     /* ------ footer ------- */
-     .footer {
+    /* ------ footer ------- */
+    .footer {
         background-image: url("../assets/footer-background.png");
-       background-size: cover;
-       width: 100%;
-       padding: 4vh;
-       background-repeat: no-repeat;
-       float: left;
-       display: grid;
-       margin-top: 5vw;
-       grid-template-rows: 2fr;
-   }
-   .ifram-div {
-       grid-row: 2;
-       width: 100%; 
-       margin: 2vw 5vw 0 0;
-       padding: 0;
-   }
-   .ifram-div .ifram {
-       margin: 0 auto 0 auto;
-       width: 85vw;
-       height: 55vw;
-   }
-   .footer-logo {
-       width: 30vw;
-       height: 20vh;
-       margin: 1vw auto 2vw auto;
-       display: block;
-   }
-   .contact-text {
-       margin: 0 auto 0 2vw;
-       display: block;
-       width: 34vw;
-       margin-top: 5vh;
-       line-height: 5vh;
-       color: rgb(233, 214, 227);
-   }
-   .contact-info {
-       margin: 0 auto 0 2vw;
-       display: block;
-       font-size: 1em;
-       width: 52vw;
-       color: rgb(233, 214, 227);
-   }
-   .fa {
-       color: rgb(226, 205, 220);
-       font-size: 1.1em;
-       margin: 0.5vw;
-   }
-   .facebook,
-   .instagram,
-   .twitter {
-       font-size: 2.2em;
-       padding: 2.5vw;
-   }
-   .complaints-section {
-       width: 52vw;
-       margin: 0 auto 0 2vw;
-       color: #e3b5d6;
-       font-size: 1em;
-       line-height: 4vh;
-   }
-   .complaints-section a {
-       color: #e3b5d6;
-   }
+        background-size: cover;
+        width: 100%;
+        padding: 4vh;
+        background-repeat: no-repeat;
+        float: left;
+        display: grid;
+        margin-top: 5vw;
+        grid-template-rows: 2fr;
+    }
+    .ifram-div {
+        grid-row: 2;
+        width: 100%;
+        margin: 2vw 5vw 0 0;
+        padding: 0;
+    }
+    .ifram-div .ifram {
+        margin: 0 auto 0 auto;
+        width: 85vw;
+        height: 55vw;
+    }
+    .footer-logo {
+        width: 30vw;
+        height: 20vh;
+        margin: 1vw auto 2vw 2vw;
+        display: block;
+    }
+    .contact-text {
+        margin: 0 auto 0 2vw;
+        display: block;
+        width: 34vw;
+        margin-top: 5vh;
+        line-height: 5vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        margin: 0 auto 0 2vw;
+        display: block;
+        font-size: 1em;
+        width: 52vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 1.1em;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 2.2em;
+        padding: 2.5vw;
+    }
+    .complaints-section {
+        width: 52vw;
+        margin: 0 auto 0 2vw;
+        color: #e3b5d6;
+        font-size: 1em;
+        line-height: 4vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+    }
 
-   .complaints-section a:hover,
-   .fa:hover,
-   .contact-info:hover {
-       cursor: pointer;
-       color: rgba(255, 255, 255, 0.938);
-   }
-   .social {
-       width: 100vw;
-       margin: 0 auto 0 auto;
-   }
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+    .social {
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
 }
