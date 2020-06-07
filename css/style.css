@@ -150,6 +150,8 @@ header {
     display: none;
 }
 
+
+
 @media (max-width: 1024px) {
     header {
         background-color: #fda136;
@@ -180,7 +182,7 @@ header {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5em;
         font-weight: bolder;
-        /* margin: 1% 0%; */
+        margin: 1% 0%;
         padding: 3vh 0;
     }
 
@@ -213,7 +215,7 @@ header {
 @media (min-width: 1024px) {
     .nav-scrolled {
         background-color: #fda136;
-        height: 50px;
+        height: 3.7vw;
         position: fixed;
         transition: all 1s;
         box-shadow: 0 3px 20px rgba(rgb(20, 175, 0), 1);
@@ -228,7 +230,7 @@ header {
         /* border: solid; */
         display: block;
         bottom: 25%;
-        height: 25px;
+        height: 2vw;
         right: 0%;
         position: absolute;
         width: 33%;
@@ -243,6 +245,7 @@ header {
         bottom: 0%;
         height: 35px;
         right: 0%;
+        
         position: absolute;
         width: 33%;
     }
@@ -251,6 +254,7 @@ header {
         position: absolute;
         top: 20%;
         left: -2%;
+        padding: .5vw;
         width: 100%;
         z-index: 3;
     }
@@ -258,7 +262,7 @@ header {
     .main_nav div {
         background-color: #fda136;
         /* border: solid; */
-        height: 100%;
+        height: 2.8vw;
         opacity: 0.8;
         position: absolute;
         width: 100%;
@@ -575,12 +579,12 @@ header {
     color: rgb(243, 236, 241);
 }
 
-@media screen and (min-width: 1023px) {
+@media (min-width: 1023px) {
     /* -------- Third section -------- */
 
     .third-section {
         position: relative;
-        height: 720px;
+        height: 59vw;
     }
 
     .part-one {
@@ -596,11 +600,12 @@ header {
         line-height: 140%;
         margin: 2% 17%;
         padding: 1%;
+        font-size: 1.5vw;
         width: 80%;
     }
     .part-one button {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.2em;
+        font-size: 1.5vw;
         margin: 5% 15% 0% 15%;
         width: 15vw;
     }
@@ -640,6 +645,7 @@ header {
     .pdf-card div {
         display: table-cell;
         vertical-align: middle;
+        font-size: 1.5vw;
     }
     .pdf-card hr {
         border-top: solid 0.15px;
@@ -652,6 +658,7 @@ header {
     /* ------------footer -------------- */
     .footer {
         margin-top: 9vw;
+        font-size: 1.2vw;
     }
 }
 
@@ -950,4 +957,30 @@ header {
         width: 100vw;
         margin: 0 auto 0 auto;
     }
+}
+@media (min-width: 1023px){
+
+.second-section div p {
+    /* border: solid; */
+    font-family: "AlrightSans", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+    line-height: 140%;
+    padding: 2%;
+    width: 90%;
+}
+.second-section div p {
+    font-size: 1.5vw;
+ 
+}
+.second-section div a {
+    font-size: 1.5vw;
+
+}
+
+.second-section div img {
+    /* border: solid; */
+    width: 65%;
+    height: 7vw;
+}
 }
