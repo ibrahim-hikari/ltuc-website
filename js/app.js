@@ -28,10 +28,10 @@ $(document).ready(()=>{
     })
 		$('.icon').click(function (e) { 
 			e.preventDefault();
-			$('.menu_nav').toggle(500);
+			$('.menu_nav').toggle(2000);
 		});
 		$(window).on('load', function () {
-			var pre_loader = $('#preloader');
+			var pre_loader = $('.spinner-wrapper');
 			pre_loader.fadeOut('slow', function () {
 					$(this).remove();
 			});
