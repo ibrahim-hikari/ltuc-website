@@ -1,9 +1,110 @@
 html {
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ivory;
+    z-index: 999999;
+}
+
+.sk-chase {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+    animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+    animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+    animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+    animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+    animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+    animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+    animation-delay: -1.1s;
+    background-color: #fdae54;
+}
+.sk-chase-dot:nth-child(2):before {
+    animation-delay: -1s;
+    background-color: #e4a105;
+}
+.sk-chase-dot:nth-child(3):before {
+    animation-delay: -0.9s;
+    background-color: #cf2102;
+}
+.sk-chase-dot:nth-child(4):before {
+    animation-delay: -0.8s;
+    background-color: #e70404;
+}
+.sk-chase-dot:nth-child(5):before {
+    animation-delay: -0.7s;
+    background-color: #a80068;
+}
+.sk-chase-dot:nth-child(6):before {
+    animation-delay: -0.6s;
+    background-color: #5b358d;
+}
+
+@keyframes sk-chase {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot {
+    80%,
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot-before {
+    50% {
+        transform: scale(0.4);
+    }
+    100%,
+    0% {
+        transform: scale(1);
+    }
 }
 /********** Header Sectoin **********/
 header {
@@ -49,7 +150,7 @@ header {
     display: none;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1024px) {
     header {
         background-color: #fda136;
         position: fixed;
@@ -79,7 +180,7 @@ header {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5em;
         font-weight: bolder;
-        margin: 1% 0%;
+        /* margin: 1% 0%; */
         padding: 3vh 0;
     }
 
@@ -102,14 +203,14 @@ header {
     }
 
     .icon div {
-        width: 4vw;
-        height: 0.5vh;
+        width: 4vmax;
+        height: 0.5vmax;
         background-color: #fff;
         margin: 1.3vh 0;
     }
 }
 
-@media (min-width: 1190px) {
+@media (min-width: 1024px) {
     .nav-scrolled {
         background-color: #fda136;
         height: 50px;
@@ -167,7 +268,7 @@ header {
     .main_nav ul li {
         display: inline;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
+        font-size: 1vw;
         font-weight: bolder;
         margin-left: 3%;
     }
@@ -185,7 +286,7 @@ header {
 }
 
 /********** FIRST SECTION **********/
-@media (max-width: 1190px) {
+@media (max-width: 1024px) {
     .hidden {
         display: block;
         height: 13vh;
@@ -197,7 +298,6 @@ header {
     /* border: solid; */
     display: inline-block;
     position: relative;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -230,7 +330,7 @@ header {
     width: 20vw;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1024px) {
     .first-section .slide-container img {
         display: inline-block;
         height: auto;
@@ -305,7 +405,7 @@ header {
     font-family: "AlrightSans", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-left: 59%;
+    margin-left: 25vw;
     margin-top: 2%;
     padding: 2%;
     text-decoration: none;
@@ -322,7 +422,7 @@ header {
     }
     .second-section .about-pic {
         /* border: solid; */
-        margin-top: 35vh;
+        margin-top: 15vh;
         width: 100%;
     }
 
@@ -330,13 +430,14 @@ header {
         /* border: solid; */
         position: relative;
         display: block;
+        padding: 0vh;
         width: 100%;
     }
 
     .second-section div img {
         /* border: solid; */
         position: absolute;
-        top: -120vh;
+        top: -111vh;
         left: 30vw;
         height: auto;
         width: 40vw;
@@ -348,9 +449,10 @@ header {
         font-size: 1em;
         font-weight: 100;
         line-height: 140%;
-        margin-top: -5vh;
+        margin-top: 2vh;
+        margin-left: 10vw;
         padding: 0%;
-        width: 80%;
+        width: 80vw;
     }
 
     .second-section div a {
@@ -363,21 +465,18 @@ header {
         font-size: 1.5rem;
         font-weight: 700;
         margin-top: 5vh;
-        margin-left: -5vw;
-        margin-right: 0vw;
+        margin-left: 5vw;
         text-align: center;
-        padding: 1%;
+        padding: 3vh 0vw;
         text-decoration: none;
-        width: 100vw;
+        width: 90vw;
     }
 }
-
-/******************************** As-har's Part  *****************************/
-
-body {
-    overflow-x: hidden;
-    letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 1024px) and (min-width: 768px) {
+    .second-section div img {
+        /* border: solid; */
+        top: -117vh;
+    }
 }
 
 /******************************** As-har's Part  *****************************/
@@ -525,7 +624,6 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.1rem;
         height: 9vw;
-        line-height: 150%;
         margin: 0% 0% 3% 0%;
         padding: 3%;
         position: relative;
@@ -559,7 +657,10 @@ body {
 
 @media (max-width: 590px) {
     /* ------- Third Section ------ */
-    .pdf-card div {
+
+    .pdf-card {
+        display: table;
+        /* border: solid; */
         font-size: 1.04rem;
         letter-spacing: 1.5px;
         background: #5b358d;
@@ -569,7 +670,7 @@ body {
         margin: 4vw auto 1vw auto;
         text-align: center;
         color: #fff;
-        line-height: 150%;
+        /* line-height: 150%; */
         text-decoration: none;
         transition: 1s;
         position: relative;
@@ -602,9 +703,10 @@ body {
 
     .pdf-card hr {
         border-top: solid 0.15px;
+        bottom: 18%;
         width: 50%;
     }
-    .pdf-card div:hover {
+    .pdf-card:hover {
         background: #e80e4a;
         box-shadow: 1px 1px 6px 1px grey;
         cursor: pointer;
