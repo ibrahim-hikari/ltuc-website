@@ -35,7 +35,7 @@ $(document).ready(()=>{
 			pre_loader.fadeOut('slow', function () {
 					$(this).remove();
 			});
-	});
+		});
 })
 
 
