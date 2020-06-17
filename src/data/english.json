@@ -1,0 +1,132 @@
+{
+    "header": {
+        "logo": "../assets/header-logo.png",
+        "nav": [
+            "Home",
+            "ABOUT US",
+            "PROGRAMS",
+            "CONTACT US"
+        ]
+    },
+    "main": {
+        "applyNow": {
+            "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=GELTUCWEB",
+            "text": "APPLY NOW"
+        },
+        "about": {
+            "title": "../assets/about-title.png",
+            "pic": "../assets/about-us-pic.png",
+            "text": "What sets us apart at Luminus Technical University College are the hundreds of diverse programs we deliver across ten schools, all of which are uniquely designed based on the latest market trends and employment requirements, ultimately providing you with specialized entrepreneurial and career training that prepares you to determine your path, enter the real world, overcome economic challenges and achieve professional success. As part of Luminus Education, we are one of the first technical colleges in Jordan to offer six different technical Bachelor Degrees in numerous high demand fields, equipping our students with not only academic strength, but also with the confidence to secure jobs in today’s rapidly evolving workforce."
+        },
+        "programs": {
+            "logo": "../assets/programs-title.png",
+            "text": "Learn about the programs available at LTUC. Click to sort the programs:",
+            "bySchool": [
+                {
+                    "title": "Advanced Technology",
+                    "link": "../assets/pdf/advanced-technology.pdf"
+                },
+                {
+                    "title": "Applied Arts",
+                    "link": "../assets/pdf/applied-arts.pdf"
+                },
+                {
+                    "title": "Applied Medical Sciences",
+                    "link": "../assets/pdf/applied-medical-sciences.pdf"
+                },
+                {
+                    "title": "Automotive Technology",
+                    "link": "../assets/pdf/automotive-technology.pdf"
+                },
+                {
+                    "title": "Beauty Art Sciences Laval",
+                    "link": "../assets/pdf/beauty-art-sciences-laval.pdf"
+                },
+                {
+                    "title": "Business",
+                    "link": "../assets/pdf/business.pdf"
+                },
+                {
+                    "title": "Construction & Civil Engineering",
+                    "link": "../assets/pdf/cons-civil-eng.pdf"
+                },
+                {
+                    "title": "Creative Media - SAE",
+                    "link": "../assets/pdf/creative-media-sae.pdf"
+                },
+                {
+                    "title": "Hospitality & Tourism",
+                    "link": "../assets/pdf/hospitality-tourism.pdf"
+                },
+                {
+                    "title": "Mechanical & Eletrical Engineering",
+                    "link": "../assets/pdf/mech-elec-eng.pdf"
+                }
+            ],
+            "byDegree": [
+                {
+                    "title": "Bachelor Degree",
+                    "link": "../assets/pdf/bachelor-degree.pdf"
+                },
+                {
+                    "title": "British Diploma(HND-Level 5)",
+                    "link": "../assets/pdf/british-diploma.pdf"
+                },
+                {
+                    "title": "Associate Degree",
+                    "link": "../assets/pdf/associate-degree.pdf"
+                },
+                {
+                    "title": "Vocational Diploma",
+                    "link": "../assets/pdf/vocational-diploma.pdf"
+                },
+                {
+                    "title": "BTEC-Level 3",
+                    "link": "../assets/pdf/btec-level-3.pdf"
+                },
+                {
+                    "title": "BTEC-Level 2",
+                    "link": "../assets/pdf/btec-level-2.pdf"
+                },
+                {
+                    "title": "Training Programs",
+                    "link": "../assets/pdf/training-programs.pdf"
+                },
+                {
+                    "title": "Short Courses",
+                    "link": "../assets/pdf/short-courses.pdf"
+                },
+                {
+                    "title": "Certificates",
+                    "link": "../assets/pdf/certificates.pdf"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
+        "logo": "../assets/footer-logo.png",
+        "contactUs": {
+            "header": "CONTACT US",
+            "phone": {
+                "number": "+962 (6) 4000 700",
+                "directPhone": "tel:+962(6)4000700"
+            },
+            "info": {
+                "email": "info@ltuc.com",
+                "directEmail": "mailto:info@ltuc.com"
+            },
+            "location": "Airport Road | P.O Box 183334 Amman 11118, Jordan",
+            "facebook": "https://www.facebook.com/LTUC.JO/",
+            "instagram": "https://www.instagram.com/ltuc.jo/",
+            "twitter": "https://twitter.com/LTUCJO"
+        },
+        "complaints": {
+            "note": "For any complaints please email us at",
+            "email": {
+                "email": "complaints@ltuc.com",
+                "href": "mailto:complaints@ltuc.com"
+            }
+        }
+    }
+}
